@@ -8,6 +8,7 @@
 --------------
 1. [Introduction](#introduction)
 2. [About Dataset](#about_dataset)
+3. [About Important Libraries Used In This Project](#About_important_libraries_used_in_this_project)
 
 ## Introduction
 --------------
@@ -28,8 +29,36 @@ Infant crying is the **physiological** action that infants use to reflect their 
   <img src="README_images_sources/Data_Distribution.png" alt="Designer" width="300"/>
 </div>
 
+* Below is distribution of audio length for each cartegory.
+<div align="center">
+  <img src="README_images_sources/Audio_length_distribution.png" alt="Designer" width="300"/>
+</div>
+
 * Since the project is **open source** if any one get's **more data for given categories** or any **other category data** they can append that data folder in [Audio_Data](Audio_Data), and can run each cell of the file [Basic_Data_Understanding.ipynb](Audio_Data/Research/Basic_Data_Understanding.ipynb) to get basic understanding of data.
 
+## About Important Libraries Used In This Project
+-------------------------------------------------
+1. **Librosa**
+
+Librosa is a Python package for music and audio analysis. It provides tools for a variety of tasks related to audio processing, feature extraction, and analysis. Librosa is widely used in the fields of music information retrieval, audio signal processing, and machine learning for audio applications.
+
+Some key features and functionalities of librosa include:
+
+1. **Audio Loading:** Librosa allows you to load audio files in various formats and provides functions to manipulate and extract information from them.
+
+2. **Feature Extraction:** It provides tools for extracting various audio features such as Mel-frequency cepstral coefficients (MFCCs), chroma feature, spectral contrast, and more. These features are commonly used for audio analysis and machine learning applications.
+
+3. **Time-Frequency Representations:** Librosa allows you to create time-frequency representations of audio signals, such as spectrograms and chromagrams, which are useful for visualizing and analyzing the frequency content of audio over time.
+
+4. **Beat and Tempo Analysis:** Librosa includes functions for beat tracking and tempo estimation, which are essential for music analysis.
+
+5. **Pitch Estimation:** It provides tools for estimating pitch and harmonic content in audio signals.
+
+6. **Time-Domain and Frequency-Domain Manipulation:** Librosa allows you to manipulate audio signals in both the time and frequency domains.
+
+7. **Machine Learning Integration:** Librosa is often used in conjunction with machine learning libraries for audio classification, genre recognition, and other audio-related tasks.
+
+Librosa simplifies many of the complex tasks associated with audio analysis, making it easier for researchers, developers, and data scientists to work with audio data in Python. It's a valuable tool for anyone working on projects involving audio processing, music analysis, or machine learning with audio data.
 
 
 
