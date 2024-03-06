@@ -23,6 +23,12 @@ Infant crying is the **physiological** action that infants use to reflect their 
 * The database is published under the **ODbL**.
 * **File naming convention**
 * One can visit the [Naming Convention](https://github.com/gveres/donateacry-corpus) github repository -> README.md to understand naming convention.
+* Below is data category and number of audio files that we have for each category.
+<div align="center">
+  <img src="README_images_sources/Data_Distribution.png" alt="Designer" width="300"/>
+</div>
+
+* Since the project is **open source** if any one get's **more data for given categories** or any **other category data** they can append that data folder in [Audio_Data](Audio_Data), and can run each cell of the file [Basic_Data_Understanding.ipynb](Audio_Data/Research/Basic_Data_Understanding.ipynb) to get basic understanding of data.
 
 
 
