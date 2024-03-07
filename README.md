@@ -8,7 +8,8 @@
 --------------
 1. [Introduction](#introduction)
 2. [About Dataset](#about_dataset)
-3. [About Important Libraries Used In This Project](#About_important_libraries_used_in_this_project)
+3. [Data Preprocessing and Understanding Workflow](data_preprocessing_and_understanding_workflow)
+4. [About Important Tools Libraries Used In This Project](#About_important_libraries_used_in_this_project)
 
 ## Introduction
 --------------
@@ -34,11 +35,23 @@ Infant crying is the **physiological** action that infants use to reflect their 
   <img src="README_images_sources/Audio_length_distribution.png" alt="Designer" width="300"/>
 </div>
 
-* Since the project is **open source** if any one get's **more data for given categories** or any **other category data** they can append that data folder in [Audio_Data](Audio_Data), and can run each cell of the file [Basic_Data_Understanding.ipynb](Audio_Data/Research/Basic_Data_Understanding.ipynb) to get basic understanding of data.
+* Since the project is **open source** if any one get's **more data for given categories** or any **other category data** they can append that data folder in [Audio_Data](Audio_Data), and can run each cell of the file [Basic_Data_Understanding.ipynb](Research/Basic_Data_Understanding.ipynb) to get basic understanding of data.
 
-## About Important Libraries Used In This Project
--------------------------------------------------
+## Data Preprocessing and understanding Workflow
+------------------------------------------------
+
+* You can go through [main_working.ipynb](Research/main_working.ipynb) to understand **EDA**, **Feature Extraction**, **Model Development and evaluation** and **Model Selection** which we have done roughly before developing end-to-end project.
+
+* You can reffer [Understanding MFCC](https://www.youtube.com/watch?v=4_SH2nfbQZ8&t=0s) to learn an important concept which is in general used in feature extraction of audio data.
+
+## About Important Tools and Libraries Used In This Project
+-----------------------------------------------------------
 1. **Librosa**
+
+<div style="display: flex; justify-content: space-around;">
+<img src="README_images_sources/librosa.png" alt="Python" width="200"/> 
+&nbsp;&nbsp;&nbsp;
+</div>
 
 Librosa is a Python package for music and audio analysis. It provides tools for a variety of tasks related to audio processing, feature extraction, and analysis. Librosa is widely used in the fields of music information retrieval, audio signal processing, and machine learning for audio applications.
 
@@ -60,6 +73,14 @@ Some key features and functionalities of librosa include:
 
 Librosa simplifies many of the complex tasks associated with audio analysis, making it easier for researchers, developers, and data scientists to work with audio data in Python. It's a valuable tool for anyone working on projects involving audio processing, music analysis, or machine learning with audio data.
 
+You can visit official site with documenation here on [Librosa](https://librosa.org/doc/latest/index.html)
+
+**Others**
+
+<div style="display: flex; justify-content: space-around;">
+<img src="README_images_sources/Python-Jupyter.webp" alt="Python" width="200"/> 
+&nbsp;&nbsp;&nbsp;
+</div>
 
 
 ## Requirements:
