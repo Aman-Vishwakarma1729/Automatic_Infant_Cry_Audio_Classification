@@ -17,6 +17,8 @@ Infant crying is the **physiological** action that infants use to reflect their 
 
 ## About Dataset
 ----------------
+* The dataset used is combination of two datas sources.
+* About **FIRST** source.
 * The data is taken from **Infant Cry Audio Corpus**.
 * An infant cry audio corpus that has been built through the **Donate-a-cry** campaign (no longer active).
 * Also it include some extra data taken from kaggle.
@@ -25,6 +27,13 @@ Infant crying is the **physiological** action that infants use to reflect their 
 * The database is published under the **ODbL**.
 * **File naming convention**
 * One can visit the [Naming Convention](https://github.com/gveres/donateacry-corpus) github repository -> README.md to understand naming convention.
+* About **SECOND** source.
+* The other data source is **"Baby Chillanto Database"**
+* Baby Chillanto Data Base is a property of **“Instituto Nacional de Astrofisica Optica y Electronica – CONACYT, Mexico”.**
+* “We like to thank **Dr. Carlos A. Reyes-Garcia**, **Dr. Emilio Arch-Tirado** and his INR-Mexico group, and **Dr. Edgar M. Garcia- Tamayo** for their dedication of the collection of the Infant Cry data base.
+* cited to **“Orion Fausto Reyes-Galaviz, Sergio Daniel Cano-Ortiz, Carlos Alberto Reyes-García. &quot;Evolutionary-Neural System to Classify Infant Cry Units for Pathologies Identification in Recently Born Babies&quot;. Proceedings of the Special Session MICAI 2008, Pg. 330-335. Eds. Alexander Gelbukh &amp; Eduardo Morales. IEEE Computer Society. ISBN: 978-0-7695-3441-1.”**
+* **NOTE** WE CANNOT MAKE DATASET PUBLICALLY AVAILABLE DUE IT's LICENSE.
+* To get the above mention dataset you can mail to **kargaxxi@inaoep.mx**
 * Below is data category and number of audio files that we have for each category.
 <div align="center">
   <img src="README_images_sources/Data_Distribution.png" alt="Designer" width="300"/>
@@ -35,12 +44,10 @@ Infant crying is the **physiological** action that infants use to reflect their 
   <img src="README_images_sources/Audio_length_distribution.png" alt="Designer" width="300"/>
 </div>
 
-* Since the project is **open source** if any one get's **more data for given categories** or any **other category data** they can append that data folder in [Audio_Data](Audio_Data), and can run each cell of the file [Basic_Data_Understanding.ipynb](Research/Basic_Data_Understanding.ipynb) to get basic understanding of data.
-
 ## Data Preprocessing and understanding Workflow
 ------------------------------------------------
 
-* You can go through [main_working.ipynb](Research/main_working.ipynb) to understand **EDA**, **Feature Extraction**, **Model Development and evaluation** and **Model Selection** which we have done roughly before developing end-to-end project.
+* You can go through [main_working.ipynb](Automatic_Infant_Cry_Audio_Classification/Research/main_working.ipynb) to understand **EDA**, **Feature Extraction**, **Model Development and evaluation** and **Model Selection** which we have done roughly before developing end-to-end project.
 
 * You can reffer [Understanding MFCC](https://www.youtube.com/watch?v=4_SH2nfbQZ8&t=0s) to learn an important concept which is in general used in feature extraction of audio data.
 
@@ -78,11 +85,30 @@ You can visit official site with documenation here on [Librosa](https://librosa.
 **Others**
 
 <div style="display: flex; justify-content: space-around;">
-<img src="README_images_sources/Python-Jupyter.webp" alt="Python" width="200"/> 
+<img src="README_images_sources/Python-Jupyter.webp" alt="Python_and_jupyter" width="200"/> 
 &nbsp;&nbsp;&nbsp;
+<img src="https://github.com/Aman-Vishwakarma1729/Body_Mass_Index_from_Face_Images/assets/110922641/f396c5ef-b037-43b6-b999-c03620f8a309" alt="Pandas" width="200"/>
+&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/Aman-Vishwakarma1729/Body_Mass_Index_from_Face_Images/assets/110922641/8528f822-17f5-411a-9466-4aefc3addc0d" alt="Numpy" width="200"/>
+&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/Aman-Vishwakarma1729/Body_Mass_Index_from_Face_Images/assets/110922641/13aba99d-8572-467f-9404-4d2ce7bfddf1" alt="Matplotlib" width="200"/>
+&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/Aman-Vishwakarma1729/Body_Mass_Index_from_Face_Images/assets/110922641/1b771704-2fbc-44b6-94f5-254965785c38" alt="Seaborn" width="200"/>
+&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/Aman-Vishwakarma1729/Body_Mass_Index_from_Face_Images/assets/110922641/74b4c8da-cb24-40ff-97a7-b3692b59fe9d" alt="Sci-Kit Learn" width="200"/>
+&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/Aman-Vishwakarma1729/Body_Mass_Index_from_Face_Images/assets/110922641/c6ede8f6-4d17-403e-ab30-e05fb9431255" alt="Tensorflow" width="200"/>
+&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/Aman-Vishwakarma1729/Body_Mass_Index_from_Face_Images/assets/110922641/e2c909d3-277e-42a6-9e2d-56da92d69f8b" alt="Keras" width="200"/>
+&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/Aman-Vishwakarma1729/Body_Mass_Index_from_Face_Images/assets/110922641/1ba19e5a-d7f7-4fee-8037-2a31a5212d7f" alt="Git Hub Actions" width="200"/>
+&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/Aman-Vishwakarma1729/Body_Mass_Index_from_Face_Images/assets/110922641/69d963e5-4615-44d9-8ebb-fdf9e16fcb8f" alt="Anaconda" width="200"/>
 </div>
 
 
 ## Requirements:
 
 1. setuptools==68.2.2
+2. Adam Optimizer
+3. categorical_crossentropy
