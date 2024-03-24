@@ -12,6 +12,7 @@ import numpy as np
 import pandas as pd
 
 
+
 def load_models():
     try:
         logging.info("Loading models for prediction on given input data")
@@ -41,12 +42,15 @@ def prediction_pipeline(audio_file_path):
         features_df= pd.DataFrame(mfccs_scaled_features.reshape(1, -1), columns=[f"Feature_{i+1}" for i in range(40)])
         scaled_input = scaler.transform(features_df)
         pred_output = model.predict(scaled_input)
+        confidence = model.predict_proba(scaled_input)[0].max()
         encoded_label = pred_output[0]
         class_name = encoder.inverse_transform([encoded_label])[0]
         result = class_name
-        logging.info(f"The result for the input data is:{result}")
-        return result
+        logging.info(f"The result for the input data is:{result} with {confidence*100}% confidence")
+        return result,confidence
     except Exception as e:
         logging.info("Exception occured while predicting result for given input")
+
+
 
 
