@@ -16,7 +16,7 @@ def get_requirements(file_path):
 if __name__=="__main__":
     setup(
         name='Automatic_Infant_Cry_Audio_Classification',
-        version='0.0.1',
+        version='1.2',
         author='Aman Vishwakarma',
         author_email='amansharma1729ds@gmail.com',
         install_requires=get_requirements('requirements.txt'),

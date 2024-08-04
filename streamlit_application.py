@@ -15,6 +15,15 @@ def main():
     st.sidebar.header("Infant Cry Analyzer :baby:")
     selection = st.sidebar.selectbox("Select a page", ("Home", "About"))
 
+    st.sidebar.markdown("""
+        <div style='text-align: center; margin-top: 20px;'>
+            Download sample data and try the application
+            <br>
+            <a href='https://github.com/Aman-Vishwakarma1729/Automatic_Infant_Cry_Audio_Classification/tree/main/sampl_audio_data' target='_blank'>Download Data</a>
+        </div>
+        """, unsafe_allow_html=True)
+    
+
     # Home page
     if selection == "Home":
         st.markdown("<h1 style='text-align: center; color: #4CAF50;'>Infant Cry Analyzer </h1>", unsafe_allow_html=True)
